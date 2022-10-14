@@ -4,13 +4,13 @@
 
 - ☑️ Install Node.js and verify the version
 - ☑️ Create, import and export modules using CommonJS
-- ☑️ Import and parse JSON data
+- ☑️ Import JSON data using CommonJS
 
 <br>
 
 ## 💼 The Brief
 
-Install and explore Node.js by completing the tickets below in order!
+Install Node.js and explore importing and exporting modules by completing the tickets below in order!
 
 <br>
 
@@ -18,17 +18,17 @@ Install and explore Node.js by completing the tickets below in order!
 
 Head to the [official Node.js website](https://nodejs.org/en/) and download/install version 18 for your operating system.
 
-Once installed, verify you have the correct version by typing `node --version` in the console.
+Once installed, verify you have the correct version by typing `node --version` in the terminal.
 
-The output returned to your console should look similar to the example below:
+The output returned to your terminal should look similar to the example below:
 
 ```
 v18.1.0
 ```
 
-If you're running v18.x, move on to the next ticket. ✔️
+💡 The exact version you're running may be slightly different from the one above, but the main aim is to ensure you are running v18.
 
-💡 The exact version you're running may be slightly different from the above, but the main aim is to ensure you are running v18.
+If you're running v18.x, move on to the next ticket. ✔️
 
 <br>
 
@@ -74,15 +74,17 @@ If the data is complete with your and your partner's info and you've checked the
 
 <br>
 
-### 🎫 Ticket 2b - Create functionality for bootcampers
+### 🎫 Ticket 2b - Create introduce functionality for bootcampers
 
-You have a list of bootcampers. Now you're going to create helper functions that you can export and use/reuse in your Node.js app later.
+You have a list of bootcampers.
+
+Now you're going to create a helper function that you can export and use/reuse in your Node.js app later.
 
 Create a `bootcamper.js` file in the root of your project.
 
 Inside `bootcampers.js` create a function named `introduce`.
 
-This function should be exported as we'll be making use of it in a different file.
+Make sure to export this function, as you'll use it in a different file.
 
 The `introduce` function will take in a bootcamper object and return a string. E.g.
 
@@ -125,7 +127,7 @@ You have `introduce` functionality located in `bootcamper.js`.
 
 Now it's time to import both and start building out our `app.js` file.
 
-Creating an `app.js` file in the root of your project.
+Create an `app.js` file in the root of your project.
 
 Inside `app.js`:
 
@@ -139,7 +141,7 @@ const john = bootcamperData[0];
 const jane = bootcamperData[1];
 ```
 
-Now call the `introduce` function for each bootcamper and log the result to the console. E.g.
+Now invoke the `introduce` function for each bootcamper and log the result to the console. E.g.
 
 ```js
 console.log(introduce(john));
@@ -152,13 +154,13 @@ Finally, run `node app.js` and if you see the correct introductions for each boo
 
 ## 🔥 Bonus tasks
 
-1. Create another function in `bootcamper.js` named `pickRandomBootcamper`. This function should take in your `bootcamperData` as an argument and return one bootcamper chosen at random. Import this function in `app.js` and log out a randomly picked bootcamper to the console.
+1. Create another function in `bootcamper.js` named `pickRandomBootcamper`. This function should take in your `bootcamperData` as an argument and return one randomly chosen Bootcamper. Import this function in `app.js` and log out a randomly chosen bootcamper to the console.
 
-2. In your pairs, ask each other the following interview questions:
+2. Now In your pairs, ask each other the following interview questions:
 
 - What is Node.js?
 - What problems does Node.js solve?
 - What are some differences between Node.js and the browser?
 - What are modules and why are they useful?
 
-Use the `pickRandomBootcamper` function to determine who goes first and keep practicing until you both are satisfied with how you're articulating your answers.
+Use your `pickRandomBootcamper` function to determine who goes first, and keep practising until you both are satisfied with how you're articulating your answers.
